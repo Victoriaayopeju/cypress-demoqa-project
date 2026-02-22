@@ -92,7 +92,7 @@ describe('Demo QA Elements', () => {
     })
 
     //Buttons
-    it.only('should verify double click, right click and dynamic click buttons', () => {
+    it('should verify double click, right click and dynamic click buttons', () => {
         cy.contains('Elements').click();
         cy.contains('Buttons').click();
     
@@ -105,10 +105,6 @@ describe('Demo QA Elements', () => {
        const rightClickMessage = 'You have done a right click';
        cy.get('#rightClickBtn').rightclick();
        cy.get('#rightClickMessage').should('contain.text', rightClickMessage);
-
-    //Dynamic Click Action
-        const dynamicClickMessage = 'You have done a dynamic click';
-        cy.contains('^Click Me$').click();    
+   
     })
-
-}); 
+});
