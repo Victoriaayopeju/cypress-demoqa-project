@@ -1,0 +1,16 @@
+{
+  "firstName": "Victoria",
+  "lastName": "Akinola",
+  "email": "akinolavictoria21@gmail.com",
+  "gender": "Female",
+  "mobile": "08034569200",
+  "month": "Februaury",
+  "year": "1994",
+  "day": "22",
+  "subjects": ["Maths"],
+  "hobbies": ["Music"],
+  "picture": "cypress/fixtures/victoria.jpeg.png",
+  "address": "Omole Estate Phase 2",
+  "state": "NCR",
+  "city": "Delhi"
+}

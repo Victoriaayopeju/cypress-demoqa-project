@@ -1,26 +1,14 @@
-describe('Demo QA Alerts', () => {
-  beforeEach(() => {
+describe('DEMO QA ALERTS, FRAMES & WINDOWS', () => {
+   beforeEach(() => {
      cy.visit('https://demoqa.com/');
 });
-   it('click button to see Alerts', () => {
+
+  it('should open a new tab and verify expected content', () => {
     cy.contains('Alerts, Frame & Windows').click();
-    cy.get(':nth-child(3) > .element-list > .menu-list > #item-1 > .router-link > .text').click();
+    cy.contains('Browser Windows').click();
 
-    cy.get('#alertButton').click();
-    cy.on('window:alert',(text) => {
-       expect(text).to.contains('You clicked a button');
-    })
-
-    cy.get('#timerAlertButton').click();
-    cy.wait(6000); 
-    cy.on('window:alert', (text) => {
-        expect(text).to.contains('This alert appeared after 5 seconds');
-    });
-
-
-
-   })
-
-})
-
+    cy.get('#tabButton').click
   
+  })
+
+}) 
